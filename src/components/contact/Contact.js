@@ -1,9 +1,16 @@
-import React, {useRef} from "react";
-import Title from "../layouts/Title";
+import React, {useEffect, useRef, useState} from "react";
 import ContactLeft from "./ContactLeft";
 import emailjs from "@emailjs/browser";
+import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 
 const Contact = () => {
+  const [letterClass, setLetterClass] = useState("text-animate");
+  const myself1 = "CONTACT ME".split("");
+
+  useEffect(() => {
+    setLetterClass("text-animate-hover");
+  }, []);
+
   const form = useRef();
 
   const handleSend = (e) => {
@@ -30,14 +37,22 @@ const Contact = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="CONTACT" des="Contact With Me" />
+        <div className="flex flex-col gap-4 font-Font mb-14">
+          <h1 className="text-4xl md:text-5xl text-gray-300 font-bold capitalize">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={myself1}
+              idx={20}
+            />
+          </h1>
+        </div>
       </div>
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
           <ContactLeft />
           <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
             <form
-              className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5"
+              className="w-full flex flex-col gap-4 lgl:gap-6 font-Font py-2 lgl:py-5"
               onSubmit={handleSend}
               ref={form}
             >

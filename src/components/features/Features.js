@@ -14,7 +14,7 @@ const Features = () => {
       id="features"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
-      <div className="flex flex-col gap-4 font-titleFont mb-14">
+      <div className="flex flex-col gap-4 font-Font mb-14">
         <h3 className="text-sm uppercase font-light text-designColor tracking-wide">
           Features
         </h3>

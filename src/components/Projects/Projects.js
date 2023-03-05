@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from "react";
-import { projectThree} from "../../assets/index";
+import {
+  projectOne,
+  projectTwo,
+  projectThree,
+  projectFour,
+  projectFive,
+  projectSix,
+} from "../../assets/index";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import ProjectsCard from "./ProjectsCard";
-import minimog from "../../images/portfolio/minimog.png"
-import blog from "../../images/portfolio/okiro.png";
-import pungent from "../../images/portfolio/pungent.png";
-import grover from "../../images/portfolio/grover.png";
-import kachaBazar from "../../images/portfolio/kacha-bazar.png";
-
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -19,10 +20,10 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 border-b-[1px] font-Font border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <div className="flex flex-col gap-4 font-titleFont mb-14">
+        <div className="flex flex-col gap-4 font-Font mb-14">
           <h3 className="text-sm uppercase font-light text-designColor tracking-wide">
             VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
           </h3>
@@ -41,42 +42,48 @@ const Projects = () => {
           title="E-commerce Website"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={minimog}
+          src={projectOne}
+          githubLink="https://github.com/sajib925/baby-store-minimog"
         />
         <ProjectsCard
           link="https://kacha-bazar-three.vercel.app/"
           title="E-commerce Website"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={kachaBazar}
+          src={projectTwo}
+          githubLink="https://github.com/sajib925/kacha-bazar"
         />
         <ProjectsCard
           link="https://grover.vercel.app/"
           title="E-commerce Website"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={grover}
+          src={projectThree}
+          githubLink="https://github.com/sajib925/grover"
         />
         <ProjectsCard
           link=""
           title="Admin Dashboard"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
+          src={projectFour}
+          githubLink="https://github.com/sajib925/admin-dashboard-syncfusion-tailwind"
         />
         <ProjectsCard
           link="https://okiro-eight.vercel.app/"
           title="Blog Website"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={blog}
+          src={projectFive}
+          githubLink="https://github.com/sajib925/okiro"
         />
         <ProjectsCard
           link="https://pungent-rho.vercel.app/"
           title="Landing Website"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={pungent}
+          src={projectSix}
+          githubLink="https://github.com/sajib925/pungent"
         />
       </div>
     </section>

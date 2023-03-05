@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {useTypewriter, Cursor} from "react-simple-typewriter";
 import {FaFacebookF, FaTwitter, FaLinkedinIn, FaReact} from "react-icons/fa";
-import {SiTailwindcss, SiFigma, SiNextdotjs} from "react-icons/si";
+import {BsGithub} from "react-icons/bs";
+import {SiTailwindcss, SiRedux, SiNextdotjs} from "react-icons/si";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 
 const LeftBanner = () => {
@@ -44,7 +45,7 @@ const LeftBanner = () => {
           <Cursor
             cursorBlinking="false"
             cursorStyle="|"
-            cursorColor="#ff014f"
+            cursorColor="#5de4c7"
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
@@ -61,15 +62,42 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn />
-            </span>
+            <a
+              href="https://www.facebook.com/profile.php?id=100008890392675"
+              target="_blank"
+              className="bannerIcon"
+            >
+              <span className="bannerIcon">
+                <FaFacebookF />
+              </span>
+            </a>
+            <a
+              href="https://twitter.com/SajibAh27935466"
+              target="_blank"
+              className="bannerIcon"
+            >
+              <span className="bannerIcon">
+                <FaTwitter />
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sajib-ahmed-70a906238/"
+              target="_blank"
+              className="bannerIcon"
+            >
+              <span className="bannerIcon">
+                <FaLinkedinIn />
+              </span>
+            </a>
+            <a
+              href="https://github.com/sajib925"
+              target="_blank"
+              className="bannerIcon"
+            >
+              <span>
+                <BsGithub />
+              </span>
+            </a>
           </div>
         </div>
         <div>
@@ -87,7 +115,7 @@ const LeftBanner = () => {
               <SiTailwindcss />
             </span>
             <span className="bannerIcon">
-              <SiFigma />
+              <SiRedux />
             </span>
           </div>
         </div>
