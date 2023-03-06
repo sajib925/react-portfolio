@@ -66,7 +66,7 @@ const Projects = () => {
         />
 
         <ProjectsCard
-          link=""
+          link="https://admin-dashboard-syncfusion-tailwind-2p68.vercel.app/"
           title="Admin Dashboard"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
