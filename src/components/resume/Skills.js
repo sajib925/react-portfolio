@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      initial={{opacity: 0}}
+      animate={{opacity: 1, transition: {duration: 0.5}}}
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
       <div className="w-full lgl:w-1/2">
@@ -14,9 +14,11 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">HTML5</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                whileInView="visible"
+                viewport={{once: true, amount: 0.5}}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">100%</span>
@@ -27,9 +29,9 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">CSS3</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-[100%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">100%</span>
@@ -40,9 +42,9 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">SASS</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-[100%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">100%</span>
@@ -53,9 +55,9 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">JAVASCRIPT</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-[70%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">70%</span>
@@ -71,9 +73,9 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">React</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">95%</span>
@@ -84,9 +86,9 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">NEXT</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">90%</span>
@@ -97,9 +99,9 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">TAILWIND</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">95%</span>
@@ -110,9 +112,9 @@ const Skills = () => {
             <p className="text-sm uppercase font-medium">REDUX</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={{x: "-100%", opacity: 0}}
+                animate={{x: 0, opacity: 1}}
+                transition={{duration: 0.5, delay: 0.5}}
                 className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
               >
                 <span className="absolute -top-7 right-0">90%</span>

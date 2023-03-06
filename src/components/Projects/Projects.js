@@ -17,6 +17,7 @@ const Projects = () => {
   useEffect(() => {
     setLetterClass("text-animate-hover");
   }, []);
+
   return (
     <section
       id="projects"
@@ -45,6 +46,7 @@ const Projects = () => {
           src={projectOne}
           githubLink="https://github.com/sajib925/baby-store-minimog"
         />
+
         <ProjectsCard
           link="https://kacha-bazar-three.vercel.app/"
           title="E-commerce Website"
@@ -53,6 +55,7 @@ const Projects = () => {
           src={projectTwo}
           githubLink="https://github.com/sajib925/kacha-bazar"
         />
+
         <ProjectsCard
           link="https://grover.vercel.app/"
           title="E-commerce Website"
@@ -61,6 +64,7 @@ const Projects = () => {
           src={projectThree}
           githubLink="https://github.com/sajib925/grover"
         />
+
         <ProjectsCard
           link=""
           title="Admin Dashboard"
@@ -69,6 +73,7 @@ const Projects = () => {
           src={projectFour}
           githubLink="https://github.com/sajib925/admin-dashboard-syncfusion-tailwind"
         />
+
         <ProjectsCard
           link="https://okiro-eight.vercel.app/"
           title="Blog Website"
@@ -77,6 +82,7 @@ const Projects = () => {
           src={projectFive}
           githubLink="https://github.com/sajib925/okiro"
         />
+
         <ProjectsCard
           link="https://pungent-rho.vercel.app/"
           title="Landing Website"

@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from "react";
 import ContactLeft from "./ContactLeft";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -50,7 +51,17 @@ const Contact = () => {
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
           <ContactLeft />
-          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
+          <motion.div
+            className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true, amount: 0.5}}
+            transition={{delay: 0.3, duration: 0.5}}
+            variants={{
+              hidden: {opacity: 0, x: 100},
+              visible: {opacity: 1, x: 0},
+            }}
+          >
             <form
               className="w-full flex flex-col gap-4 lgl:gap-6 font-Font py-2 lgl:py-5"
               onSubmit={handleSend}
@@ -107,7 +118,7 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

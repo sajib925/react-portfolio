@@ -4,6 +4,7 @@ import {FaFacebookF, FaTwitter, FaLinkedinIn, FaReact} from "react-icons/fa";
 import {BsGithub} from "react-icons/bs";
 import {SiTailwindcss, SiRedux, SiNextdotjs} from "react-icons/si";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import {motion} from "framer-motion";
 
 const LeftBanner = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -24,7 +25,17 @@ const LeftBanner = () => {
 
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20 max-lgl:items-center">
-      <div className="flex flex-col max-lgl:items-center gap-5">
+      <motion.div
+        className="flex flex-col max-lgl:items-center gap-5"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.5}}
+        transition={{delay: 0.3, duration: 0.5}}
+        variants={{
+          hidden: {opacity: 0, x: -100},
+          visible: {opacity: 1, x: 0},
+        }}
+      >
         <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-4xl md:text-5xl lgl:text-6xl font-bold text-white flex items-center flex-wrap gap-x-2">
           <AnimatedLetters
@@ -55,8 +66,19 @@ const LeftBanner = () => {
           as react js. I use these technologies to create visually appealing and
           responsive web pages that provide a great user experience.
         </p>
-      </div>
-      <div className="flex flex-col xl:flex-row gap-6 xl:gap-0 justify-between">
+      </motion.div>
+
+      <motion.div
+        className="flex flex-col xl:flex-row gap-6 xl:gap-0 justify-between"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.5}}
+        transition={{delay: 0.3, duration: 0.5}}
+        variants={{
+          hidden: {opacity: 0, y: 100},
+          visible: {opacity: 1, y: 0},
+        }}
+      >
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
             Find me in
@@ -119,7 +141,7 @@ const LeftBanner = () => {
             </span>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
