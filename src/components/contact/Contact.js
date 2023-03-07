@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 border-b-[1px] border-b-black overflow-hidden"
     >
       <div className="flex justify-center items-center text-center">
         <div className="flex flex-col gap-4 font-Font mb-14">
@@ -62,6 +62,7 @@ const Contact = () => {
               visible: {opacity: 1, x: 0},
             }}
           >
+
             <form
               className="w-full flex flex-col gap-4 lgl:gap-6 font-Font py-2 lgl:py-5"
               onSubmit={handleSend}

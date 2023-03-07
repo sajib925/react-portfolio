@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 border-b-[1px] font-Font border-b-black"
+      className="w-full py-20 border-b-[1px] font-Font border-b-black overflow-hidden"
     >
       <div className="flex justify-center items-center text-center">
         <div className="flex flex-col gap-4 font-Font mb-14">

@@ -2422,6 +2422,11 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
+TagCloud@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/TagCloud/-/TagCloud-2.3.2.tgz#2f5e6d58f58d3ec060791ebeca6ac604b50f246e"
+  integrity sha512-WMnfCyRCjAejqTBHR3EVcA02nCOhoD1HEEU+KHS7m9Oj/t4IcOKTjklyOadTibeGRA4poK/rxwuO4g61qZvObA==
+
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.6.tgz#41b80f2c871d19686216b82309231cfd3cb3d291"

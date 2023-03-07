@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="w-full h-auto bg-bodyColor text-lightText">
       <Navbar />
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl w-[100%] mx-auto px-4">
         <Banner />
         <Features />
         <Resume />
-        <Projects />
-        <Contact />
+        {/* <Projects /> */}
+        {/* <Contact /> */}
         <Footer />
         <FooterBottom />
       </div>
