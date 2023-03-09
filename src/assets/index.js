@@ -8,6 +8,7 @@ import projectFive from "./images/projects/okiro.png";
 import projectSix from "./images/projects/pungent.png";
 import quote from "./images/testmonial/quote.png";
 import contactImg from "./images/contact/images.jpg";
+import footerLogo from "./images/footer-logo.png"
 
 export {
   logo,
@@ -20,4 +21,5 @@ export {
   projectSix,
   quote,
   contactImg,
+  footerLogo
 };
