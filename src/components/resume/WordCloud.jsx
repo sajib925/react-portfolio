@@ -1,13 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
+
 import TagCloud from "TagCloud";
 
 const WordCloud = () => {
   const [isLoading, setLoad] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const container = ".content";
-  
+  let optionRadius;
+  if (windowWidth >= 740) {
+    optionRadius = 300;
+  } else {
+    optionRadius = 150;
+  }
+
+  const container = ".bottle";
+
   const texts = [
     "ReactJS",
+    "ReactQuery",
     "Redux",
     "HTML5",
     "CSS3",
@@ -16,35 +26,43 @@ const WordCloud = () => {
     "NextJs",
     "Git",
     "GitHub",
-    "TailWindCss",
+    "TailwindCss",
     "BootStrap",
-    "WebFlow",
+    "Webflow",
+    "GatsbyJs",
+    "GraphQL",
   ];
+
   const options = {
-    radius: 300,
-    // animation speed
-    // slow, normal, fast
+    radius: optionRadius,
+
     maxSpeed: "fast",
     initSpeed: "fast",
-    // 0 = top
-    // 90 = left
-    // 135 = right-bottom
-    direction: 135,
-    // interact with cursor move on mouse out
+
+    itenClass: "sdsd",
+
     keep: true,
   };
-  //   to render wordcloud each time the page is reloaded
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   useEffect(() => {
     if (isLoading) {
       TagCloud(container, texts, options);
       setLoad(false);
     }
-  });
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
 
   return (
     <div className="main">
-      <span className="content"></span>
+      <span className="bottle"></span>
     </div>
   );
 };

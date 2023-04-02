@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import Skills from "./Skills";
-// import WordCloud from './WordCloud';
+// import Skills from "./Skills";
+import WordCloud from './WordCloud';
 
 const Resume = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -26,8 +26,8 @@ const Resume = () => {
           </h1>
         </div>
       </div>
-      <Skills />
-      {/* <WordCloud /> */}
+      {/* <Skills /> */}
+      <WordCloud />
     </section>
   );
 };
