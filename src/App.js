@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "./components/banner/Banner";
 import Contact from "./components/contact/Contact";
 import Features from "./components/features/Features";
@@ -7,7 +7,7 @@ import FooterBottom from "./components/footer/FooterBottom";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/resume/Resume";
-import {BsArrow90DegUp} from "react-icons/bs";
+import { BsArrow90DegUp } from "react-icons/bs";
 
 function App() {
   const [isScroll, setIsScroll] = useState(false);
@@ -24,7 +24,7 @@ function App() {
   });
 
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText">
+    <div className="w-full h-auto bg-white dark:bg-bodyColor text-lightText">
       <Navbar />
       <div className="max-w-screen-xl w-[100%] mx-auto px-4">
         <Banner />

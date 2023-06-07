@@ -36,14 +36,16 @@ const LeftBanner = () => {
           visible: {opacity: 1, x: 0},
         }}
       >
-        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
-        <h1 className="text-4xl md:text-5xl lgl:text-6xl font-bold text-white flex items-center flex-wrap gap-x-2">
+        <h4 className=" text-lg text-darkText dark:text-lightText font-normal">
+          WELCOME TO MY WORLD
+        </h4>
+        <h1 className="text-4xl md:text-5xl lgl:text-6xl font-bold text-darkText dark:text-white flex items-center flex-wrap gap-x-2">
           <AnimatedLetters
             letterClass={letterClass}
             strArray={myself1}
             idx={20}
           />{" "}
-          <span className="text-designColor capitalize max-sm:block">
+          <span className="text-designColorlight dark:text-designColor capitalize max-sm:block">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={myself2}
@@ -51,7 +53,7 @@ const LeftBanner = () => {
             />
           </span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
+        <h2 className="text-4xl font-bold dark:text-white text-designColorlight">
           A <span>{text}</span>
           <Cursor
             cursorBlinking="false"
@@ -59,7 +61,7 @@ const LeftBanner = () => {
             cursorColor="#5de4c7"
           />
         </h2>
-        <p className="text-base font-bodyFont leading-6 tracking-wide">
+        <p className="text-base text-darkText dark:text-lightText font-bodyFont leading-6 tracking-wide">
           As a front-end web developer, I am responsible for designing and
           implementing the user interface of websites and web applications. I
           have expertise in HTML, CSS, JavaScript, and javascript libraries such
@@ -80,7 +82,7 @@ const LeftBanner = () => {
         }}
       >
         <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">
+          <h2 className="text-base text-darkText dark:text-lightText uppercase font-titleFont mb-4">
             Find me in
           </h2>
           <div className="flex gap-4">
@@ -123,7 +125,7 @@ const LeftBanner = () => {
           </div>
         </div>
         <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">
+          <h2 className="text-base text-darkText dark:text-lightText uppercase font-titleFont mb-4">
             BEST SKILL ON
           </h2>
           <div className="flex gap-4">

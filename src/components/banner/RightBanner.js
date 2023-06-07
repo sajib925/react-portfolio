@@ -22,7 +22,7 @@ const RightBanner = () => {
         src={bannerImg}
         alt="bannerImg"
       />
-      <div className="absolute bottom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center"></div>
+      <div className="absolute bottom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#fff] to-[#fafafa] dark:from-[#1e2024] dark:to-[#202327] shadow-shadowTwo dark:shadow-shadowOne flex justify-center items-center"></div>
     </motion.div>
   );
 };

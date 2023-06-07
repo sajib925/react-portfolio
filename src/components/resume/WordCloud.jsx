@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 
 import TagCloud from "TagCloud";
 
@@ -31,6 +31,7 @@ const WordCloud = () => {
     "Webflow",
     "GatsbyJs",
     "GraphQL",
+    "ChakraUi",
   ];
 
   const options = {
@@ -62,7 +63,7 @@ const WordCloud = () => {
 
   return (
     <div className="main">
-      <span className="bottle"></span>
+      <span className="bottle text-darkText dark:text-lightText hover:text-designColorlight dark:hover:text-designColor"></span>
     </div>
   );
 };

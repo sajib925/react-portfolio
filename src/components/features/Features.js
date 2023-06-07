@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Card from "./Card";
 
@@ -12,13 +12,13 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 border-b-[1px] border-b-gray-300 dark:border-b-gray-600"
     >
       <div className="flex flex-col gap-4 font-Font mb-14">
-        <h3 className="text-sm uppercase font-light text-designColor tracking-wide">
+        <h3 className="text-sm uppercase font-light text-designColorlight dark:text-designColor tracking-wide">
           Features
         </h3>
-        <h1 className="text-4xl md:text-5xl text-gray-300 font-bold capitalize">
+        <h1 className="text-4xl md:text-5xl text-darkText dark:text-lightText font-bold capitalize">
           <AnimatedLetters
             letterClass={letterClass}
             strArray={forClient}

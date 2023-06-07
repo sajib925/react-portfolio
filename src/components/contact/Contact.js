@@ -1,10 +1,10 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ContactLeft from "./ContactLeft";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import {motion} from "framer-motion";
-import {useForm} from "react-hook-form";
-import {ToastContainer, toast} from "react-toastify";
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -14,7 +14,7 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    formState: {errors},
+    formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     emailjs
@@ -60,11 +60,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black overflow-hidden"
+      className="w-full py-20 border-b-[1px] border-b-gray-300 dark:border-b-gray-600 overflow-hidden"
     >
       <div className="flex justify-center items-center text-center">
         <div className="flex flex-col gap-4 font-Font mb-14">
-          <h1 className="text-4xl md:text-5xl text-gray-300 font-bold capitalize">
+          <h1 className="text-4xl md:text-5xl text-darkText dark:text-lightText font-bold capitalize">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={myself1}
@@ -77,14 +77,14 @@ const Contact = () => {
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
           <ContactLeft />
           <motion.div
-            className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne"
+            className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#fff] to-[#fafafa] dark:from-[#1e2024] dark:to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowTwo dark:shadow-shadowOne"
             initial="hidden"
             whileInView="visible"
-            viewport={{once: true, amount: 0.5}}
-            transition={{delay: 0.3, duration: 0.5}}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
             variants={{
-              hidden: {opacity: 0, x: 100},
-              visible: {opacity: 1, x: 0},
+              hidden: { opacity: 0, x: 100 },
+              visible: { opacity: 1, x: 0 },
             }}
           >
             <form
@@ -94,13 +94,13 @@ const Contact = () => {
             >
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
+                  <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
                     Your name
                   </p>
                   <input
                     type="text"
                     name="name"
-                    {...register("name", {required: true, maxLength: 20})}
+                    {...register("name", { required: true, maxLength: 20 })}
                     className={` contactInput ${
                       errors.name ? "focus-visible:outline-red-900" : ""
                     } `}
@@ -119,7 +119,7 @@ const Contact = () => {
                   )}
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
+                  <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
                     Phone Number
                   </p>
                   <input
@@ -153,7 +153,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
                   Email
                 </p>
                 <input
@@ -181,13 +181,13 @@ const Contact = () => {
                 )}
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
                   Subject
                 </p>
                 <input
                   name="subject"
                   type="text"
-                  {...register("subject", {required: true, maxLength: 50})}
+                  {...register("subject", { required: true, maxLength: 50 })}
                   className={` contactInput ${
                     errors.subject ? "focus-visible:outline-red-600" : ""
                   } `}
@@ -206,14 +206,14 @@ const Contact = () => {
                 )}
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
+                <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
                   Message
                 </p>
                 <textarea
                   name="message"
                   cols="30"
                   rows="8"
-                  {...register("message", {required: true, maxLength: 500})}
+                  {...register("message", { required: true, maxLength: 500 })}
                   className={` contactInput ${
                     errors.message ? "focus-visible:outline-red-600" : ""
                   } `}
@@ -230,13 +230,12 @@ const Contact = () => {
                     Max length exceeded
                   </span>
                 )}
-                
               </div>
               <div className="w-full">
                 <button
                   type="submit"
                   value="Send"
-                  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
+                  className="w-full h-12 bg-[#e7e7e7] dark:bg-[#141518] rounded-lg text-base text-darkText dark:text-lightText tracking-wider uppercase dark:hover:text-white duration-300 hover:border-[2px] hover:border-designColor border-transparent"
                 >
                   Send Message
                 </button>

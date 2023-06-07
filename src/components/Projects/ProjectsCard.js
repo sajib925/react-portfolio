@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 const ProjectsCard = ({link, title, des, src, githubLink}) => {
   return (
     <motion.div
-      className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000"
+      className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowTwo dark:shadow-shadowOne flex flex-col bg-gradient-to-r from-[#fff] to-[#fafafa] dark:from-bodyColor dark:to-[#202327] group hover:bg-gradient-to-b hover:from-[#fafafa] hover:[#fafafa] dark:hover:from-gray-900 dark:hover:gray-900 transition-colors duration-1000"
       initial="hidden"
       whileInView="visible"
       viewport={{once: true, amount: 0.5}}
@@ -30,7 +30,7 @@ const ProjectsCard = ({link, title, des, src, githubLink}) => {
       <div className="w-full mt-5 flex flex-col  gap-6">
         <div>
           <div className="flex items-center justify-between">
-            <h3 className="text-base uppercase text-designColor font-normal">
+            <h3 className="text-base uppercase text-designColorlight dark:text-designColor font-normal">
               {title}
             </h3>
             <a href={githubLink} target="_blank" className="">
@@ -39,7 +39,7 @@ const ProjectsCard = ({link, title, des, src, githubLink}) => {
               </span>
             </a>
           </div>
-          <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
+          <p className="text-sm tracking-wide mt-3 text-darkText dark:text-lightText dark:hover:text-gray-100 duration-300">
             {des}
           </p>
         </div>
