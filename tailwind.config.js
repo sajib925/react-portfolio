@@ -23,7 +23,7 @@ module.exports = {
         darkText: "#212428",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
         // designColor: "#6495ED",
-        designColorlight: " #ff014f",
+        designColorlight: "#ff014f",
         designColor: "#5de4c7",
       },
       boxShadow: {

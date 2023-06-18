@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from "react";
-import {useTypewriter, Cursor} from "react-simple-typewriter";
-import {FaFacebookF, FaTwitter, FaLinkedinIn, FaReact} from "react-icons/fa";
-import {BsGithub} from "react-icons/bs";
-import {SiTailwindcss, SiRedux, SiNextdotjs} from "react-icons/si";
+import React, { useEffect, useState } from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
+import { SiTailwindcss, SiRedux, SiNextdotjs } from "react-icons/si";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const LeftBanner = () => {
+  const { t } = useTranslation();
   const [letterClass, setLetterClass] = useState("text-animate");
   const myself1 = "Hi, I'm".split("");
   const myself2 = "Sajib Ahmed".split("");
@@ -29,15 +31,15 @@ const LeftBanner = () => {
         className="flex flex-col max-lgl:items-center gap-5"
         initial="hidden"
         whileInView="visible"
-        viewport={{once: true, amount: 0.5}}
-        transition={{delay: 0.3, duration: 0.5}}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
         variants={{
-          hidden: {opacity: 0, x: -100},
-          visible: {opacity: 1, x: 0},
+          hidden: { opacity: 0, x: -100 },
+          visible: { opacity: 1, x: 0 },
         }}
       >
         <h4 className=" text-lg text-darkText dark:text-lightText font-normal">
-          WELCOME TO MY WORLD
+          {t("WELCOMETOMYWORLD")}
         </h4>
         <h1 className="text-4xl md:text-5xl lgl:text-6xl font-bold text-darkText dark:text-white flex items-center flex-wrap gap-x-2">
           <AnimatedLetters
@@ -62,11 +64,9 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base text-darkText dark:text-lightText font-bodyFont leading-6 tracking-wide">
-          As a front-end web developer, I am responsible for designing and
-          implementing the user interface of websites and web applications. I
-          have expertise in HTML, CSS, JavaScript, and javascript libraries such
-          as react js. I use these technologies to create visually appealing and
-          responsive web pages that provide a great user experience.
+          {t(
+            "Asafrontendwebdeveloper,myworkinvolvesdesigningandimplementinguser nterfacesforwebsitesandweb applications.IhaveexpertiseinHTML,CSS,JavaScript,aswellasJavaScriptlibrariessuchasReact.js,Next.js,and Gatsby.js.IamalsoskilledinusingWebflowandWordPress.Withthesetechnologies,Icreatevisually ppealingand responsivewebpagesthatdeliveranexceptionaluserexperience."
+          )}
         </p>
       </motion.div>
 
@@ -74,16 +74,16 @@ const LeftBanner = () => {
         className="flex flex-col xl:flex-row gap-6 xl:gap-0 justify-between"
         initial="hidden"
         whileInView="visible"
-        viewport={{once: true, amount: 0.5}}
-        transition={{delay: 0.3, duration: 0.5}}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
         variants={{
-          hidden: {opacity: 0, y: 100},
-          visible: {opacity: 1, y: 0},
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
         }}
       >
         <div>
           <h2 className="text-base text-darkText dark:text-lightText uppercase font-titleFont mb-4">
-            Find me in
+            {t("Findmein")}
           </h2>
           <div className="flex gap-4">
             <a
@@ -126,7 +126,7 @@ const LeftBanner = () => {
         </div>
         <div>
           <h2 className="text-base text-darkText dark:text-lightText uppercase font-titleFont mb-4">
-            BEST SKILL ON
+            {t("BESTSKILLON")}
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">

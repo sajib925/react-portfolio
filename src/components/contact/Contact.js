@@ -6,8 +6,10 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [letterClass, setLetterClass] = useState("text-animate");
   const myself1 = "CONTACT ME".split("");
   const form = useRef();
@@ -95,7 +97,7 @@ const Contact = () => {
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
-                    Your name
+                    {t("YourName")}
                   </p>
                   <input
                     type="text"
@@ -108,19 +110,19 @@ const Contact = () => {
 
                   {errors.name && (
                     <span className="font-Font text-red-500">
-                      This field is required
+                      {t("ThisFieldIsRequired")}
                     </span>
                   )}
 
                   {errors.name && errors.name.type === "maxLength" && (
                     <span className="font-Font text-red-500">
-                      Max length exceeded
+                      {t("Maxlengthexceeded")}
                     </span>
                   )}
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
-                    Phone Number
+                    {t("PhoneNumber")}
                   </p>
                   <input
                     name="number"
@@ -136,25 +138,25 @@ const Contact = () => {
                   />
                   {errors.number && (
                     <span className="font-Font text-red-500">
-                      This field is required
+                      {t("ThisFieldIsRequired")}
                     </span>
                   )}
 
                   {errors.number && errors.number.type === "maxLength" && (
                     <span className="font-Font text-red-500">
-                      Max length exceeded
+                      {t("Maxlengthexceeded")}
                     </span>
                   )}
                   {errors.number && errors.number.type === "pattern" && (
                     <span className="font-Font text-red-500">
-                      This Is Not a Number
+                      {t("ThisIsNotaNumber")}
                     </span>
                   )}
                 </div>
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
-                  Email
+                  {t("Email")}
                 </p>
                 <input
                   name="email"
@@ -170,19 +172,19 @@ const Contact = () => {
 
                 {errors.email && (
                   <span className="font-Font text-red-500">
-                    This field is required
+                    {t("ThisFieldIsRequired")}
                   </span>
                 )}
 
                 {errors.email && errors.email.type === "pattern" && (
                   <span className="font-Font text-red-600">
-                    This is not a Valid Email
+                    {t("ThisFieldIsRequired")}
                   </span>
                 )}
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
-                  Subject
+                  {t("Subject")}
                 </p>
                 <input
                   name="subject"
@@ -195,19 +197,19 @@ const Contact = () => {
 
                 {errors.subject && (
                   <span className="font-Font text-red-500">
-                    This field is required
+                    {t("ThisFieldIsRequired")}
                   </span>
                 )}
 
                 {errors.subject && errors.subject.type === "maxLength" && (
                   <span className="font-Font text-red-500">
-                    Max length exceeded
+                    {t("Maxlengthexceeded")}
                   </span>
                 )}
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-darkText dark:text-lightText uppercase tracking-wide">
-                  Message
+                  {t("Message")}
                 </p>
                 <textarea
                   name="message"
@@ -221,13 +223,13 @@ const Contact = () => {
 
                 {errors.message && (
                   <span className="font-Font text-red-500">
-                    This field is required
+                    {t("ThisFieldIsRequired")}
                   </span>
                 )}
 
                 {errors.message && errors.message.type === "maxLength" && (
                   <span className="font-Font text-red-500">
-                    Max length exceeded
+                    {t("Maxlengthexceeded")}
                   </span>
                 )}
               </div>
@@ -237,7 +239,7 @@ const Contact = () => {
                   value="Send"
                   className="w-full h-12 bg-[#e7e7e7] dark:bg-[#141518] rounded-lg text-base text-darkText dark:text-lightText tracking-wider uppercase dark:hover:text-white duration-300 hover:border-[2px] hover:border-designColor border-transparent"
                 >
-                  Send Message
+                  {t("SendMessage")}
                 </button>
               </div>
             </form>

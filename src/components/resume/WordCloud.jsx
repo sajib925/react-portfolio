@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import TagCloud from "TagCloud";
 
 const WordCloud = () => {
+  const { t } = useTranslation();
   const [isLoading, setLoad] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -16,22 +18,22 @@ const WordCloud = () => {
   const container = ".bottle";
 
   const texts = [
-    "ReactJS",
-    "ReactQuery",
-    "Redux",
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "SCSS",
-    "NextJs",
-    "Git",
-    "GitHub",
-    "TailwindCss",
-    "BootStrap",
-    "Webflow",
-    "GatsbyJs",
-    "GraphQL",
-    "ChakraUi",
+    t("ReactJS"),
+    t("ReactQuery"),
+    t("Redux"),
+    t("HTML5"),
+    t("CSS3"),
+    t("JavaScript"),
+    t("SCSS"),
+    t("NextJs"),
+    t("Git"),
+    t("GitHub"),
+    t("TailwindCss"),
+    t("BootStrap"),
+    t("Webflow"),
+    t("GatsbyJs"),
+    t("GraphQL"),
+    t("ChakraUi"),
   ];
 
   const options = {

@@ -3,8 +3,10 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { contactImg } from "../../assets/index";
 import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContactLeft = () => {
+  const { t } = useTranslation();
   return (
     <motion.div
       className="w-full lgl:w-[35%] h-full font-Font bg-gradient-to-r from-[#fff] to-[#fafafa] dark:from-[#1e2024] dark:to-[#23272b] p-4 lgl:p-8 rounded-lg shadow-shadowTwo dark:shadow-shadowOne flex flex-col gap-8 justify-center"
@@ -24,21 +26,26 @@ const ContactLeft = () => {
       />
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-darkText dark:text-lightText">
-          Sajib Ahmed
+          {t("SajibAhmed")}
         </h3>
         <p className="text-lg font-normal text-darkText dark:text-gray-400">
-          Front-End Web Developer
+          {t("Front-EndWebDeveloper")}
         </p>
         <p className="text-base  text-darkText dark:text-gray-400 tracking-wide">
-          I have expertise in HTML, CSS, JavaScript, and javascript libraries
-          such as react js and its framework next js.
+          {t(
+            "IhaveexpertiseinJavaScriptandjavascriptlibrariessuchasreactjsanditsframeworknextjsandgatsbyjsaswell asWebflowandWordPress"
+          )}
         </p>
         <p className="text-base text-darkText dark:text-gray-400 flex items-center gap-2">
-          Phone:{" "}
-          <span className="text-darkText dark:text-lightText">01740786762</span>
+          {t("Phone")}
+          {":"}
+          <span className="text-darkText dark:text-lightText">
+            {t("01740786762")}
+          </span>
         </p>
         <p className="text-base text-darkText dark:text-gray-400 flex items-center gap-2">
-          Email:{" "}
+          {t("Email")}
+          {":"}
           <span className="text-darkText dark:text-lightText">
             hmsajibahmed7@gmail.com
           </span>
@@ -46,7 +53,7 @@ const ContactLeft = () => {
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase text-darkText dark:text-lightText font-titleFont mb-4">
-          Find me in
+          {t("Findmein")}
         </h2>
         <div className="flex gap-4">
           <a

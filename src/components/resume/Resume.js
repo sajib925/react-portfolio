@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 // import Skills from "./Skills";
 import WordCloud from "./WordCloud";
+import { useTranslation } from "react-i18next";
 
 const Resume = () => {
+  const { t } = useTranslation();
   const [letterClass, setLetterClass] = useState("text-animate");
   const skills = "My Skills".split("");
 
@@ -18,7 +20,7 @@ const Resume = () => {
       <div className="flex justify-center items-center text-center">
         <div className="flex flex-col gap-4 font-titleFont mb-14">
           <h3 className="text-sm uppercase font-light text-designColorlight dark:text-designColor tracking-wide">
-            2 YEARS OF EXPERIENCE
+            {t("2YEARSOFEXPERIENCE")}
           </h3>
           <h1 className="text-4xl md:text-5xl text-darkText dark:text-lightText font-bold capitalize">
             <AnimatedLetters
