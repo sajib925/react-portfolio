@@ -59,8 +59,9 @@
   "LANDINGWEBSITE": "LANDING WEBSITE",
   "BLOG WEBSITE": "BLOG WEBSITE",
   "MadebyReact.jsandStyledComponents": "Made by React.js and Styled Components",
-  "MadebyReact.jsandModuleCSS": "Made by React.js and Styled Components",
+  "MadebyReact.jsandModuleCSS": "Made by React.js and ModuleCSS",
   "MadebyNext.jsandTailwindCSS": "Made by Next.js and TaiwindCSS",
   "MadebyNext.jsandModuleCSS": "Made by Next.js and ModuleCSS",
+  "MadebyWebflow": "Made by Webflow",
   "©2023.AllrightsreservedbySajibAhmed": "© 2023. All rights reserved by Sajib Ahmed"
 }

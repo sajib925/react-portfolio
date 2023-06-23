@@ -55,9 +55,10 @@
   "ADMINDASHBOARD": "لوحة التحكم الإدارية",
   "LANDINGWEBSITE": "موقع الهبوط أو الموقع الاستقبالي",
   "BLOG WEBSITE": "موقع الويب للمدونة",
-  "MadebyReact.jsandStyledComponents": "صُنع باستخدام React.js و Styled Components",
-  "MadebyReact.jsandModuleCSS": "صُنع باستخدام React.js و Styled Components",
-  "MadebyNext.jsandTailwindCSS": "صُنع باستخدام Next.js و TaiwindCSS",
-  "MadebyNext.jsandModuleCSS": "صُنع باستخدام Next.js و ModuleCSS",
+  "MadebyReact.jsandStyledComponents": "صُنع بواسطة ريأكت جي إس ومكونات مُنسّقة",
+  "MadebyReact.jsandModuleCSS": "صُنع بواسطة ريأكت جي إس وموديول سي إس إس",
+  "MadebyNext.jsandTailwindCSS": "صُنع بواسطة نيكست.جي إس وتايلويند سي إس إس",
+  "MadebyNext.jsandModuleCSS": "صُنع بواسطة نيكست.جي إس وموديول سي إس إس",
+  "MadebyWebflow": "صُنع بواسطة ويب فلو",
   "©2023.AllrightsreservedbySajibAhmed": "٢٠٢٣.© جميع الحقوق محفوظة بواسطة ساجب أحمد"
 }

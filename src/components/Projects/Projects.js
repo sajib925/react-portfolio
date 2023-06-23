@@ -41,7 +41,7 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          link="https://mahade-vai-test.vercel.app/"
+          link="https://vercel.com/sajib925/baby-store-minimog-c649"
           title={t("E-COMMERCEWEBSITE")}
           subTitle={t("MadebyReact.jsandStyledComponents")}
           des={t(
@@ -63,14 +63,14 @@ const Projects = () => {
         />
 
         <ProjectsCard
-          link="https://grover.vercel.app/"
-          title={t("E-COMMERCEWEBSITE")}
-          subTitle={t("MadebyReact.jsandModuleCSS")}
+          link="https://evemat-d81d99.webflow.io/"
+          title={t("LANDINGWEBSITE")}
+          subTitle={t("MadebyWebflow")}
           des={t(
-            "Thisisane-commerceportfoliowebsitethatissolelyforshowcasing.Itdisplaysacollectionofproductsandservices relatedtomyworkandexpertise."
+            "Thisisalandingportfoliowebsitethatissolelyforshowcasing.Itdisplaysacollectionofproductsandservices relatedtomyworkandexpertise."
           )}
           src={projectThree}
-          githubLink="https://github.com/sajib925/grover"
+          githubLink="#"
         />
 
         <ProjectsCard
