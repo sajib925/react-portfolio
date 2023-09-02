@@ -9,7 +9,7 @@ import projectSix from "./images/projects/pungent.png";
 import quote from "./images/testmonial/quote.png";
 import contactImg from "./images/contact/images.jpg";
 import footerLogo from "./images/footer-logo.png";
-
+import cv from "./images/CV Resume.jpg";
 export {
   logo,
   bannerImg,
@@ -22,4 +22,5 @@ export {
   quote,
   contactImg,
   footerLogo,
+  cv,
 };

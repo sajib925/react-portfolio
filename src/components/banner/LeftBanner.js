@@ -6,6 +6,7 @@ import { SiTailwindcss, SiRedux, SiNextdotjs } from "react-icons/si";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { cv } from "../../assets";
 
 const LeftBanner = () => {
   const { t } = useTranslation();
@@ -143,6 +144,25 @@ const LeftBanner = () => {
             </span>
           </div>
         </div>
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="flex items-center justify-center"
+      >
+        <a
+          href={cv}
+          download={cv}
+          className="py-4 px-6 bg-white dark:bg-black dark:bg-opacity-25 text-gray-700 dark:text-gray-200 text-xl inline-flex items-center justify-center rounded-md dark:shadow-shadowOne shadow-shadowTwo dark:hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300 z-10"
+        >
+          Downlad CV
+        </a>
       </motion.div>
     </div>
   );
