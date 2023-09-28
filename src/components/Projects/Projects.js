@@ -41,7 +41,7 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          link="https://vercel.com/sajib925/baby-store-minimog-c649"
+          link="https://baby-store-minimog-c649.vercel.app"
           title={t("E-COMMERCEWEBSITE")}
           subTitle={t("MadebyReact.jsandStyledComponents")}
           des={t(
