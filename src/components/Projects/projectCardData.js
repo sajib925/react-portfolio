@@ -5,7 +5,7 @@ import {
     projectFour,
     projectFive,
     projectSix,
-    clientProject
+    clientProject, webflowImg
 } from "../../assets/index";
 export const projectCardData = [
     {
@@ -50,6 +50,16 @@ export const projectCardData = [
     },
     {
         id: 5,
+        link: "https://landing-page-0c97b6.webflow.io/",
+        title: "LANDINGWEBSITE",
+        subTitle: "MadebyWebflow",
+        des:
+            "Thisisalandingportfoliowebsitethatissolelyforshowcasing.Itdisplaysacollectionofproductsandservices relatedtomyworkandexpertise.",
+        img: webflowImg,
+        githubLink: "#",
+    },
+    {
+        id: 6,
         link: "https://admin-dashboard-syncfusion-tailwind-2p68.vercel.app/",
         title: "ADMINDASHBOARD",
         subTitle: "MadebyNext.jsandTailwindCSS",
@@ -59,7 +69,7 @@ export const projectCardData = [
         githubLink: "https://github.com/sajib925/admin-dashboard-syncfusion-tailwind",
     },
     {
-        id: 6,
+        id: 7,
         link: "https://okiro-eight.vercel.app/",
         title: "BLOG WEBSITE",
         subTitle: "MadebyReact.jsandStyledComponents",
@@ -69,7 +79,7 @@ export const projectCardData = [
         githubLink: "https://github.com/sajib925/okiro",
     },
     {
-        id: 7,
+        id: 8,
         link: "https://pungent-rho.vercel.app/",
         title: "LANDINGWEBSITE",
         subTitle: "MadebyNext.jsandModuleCSS",

@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78014c75-c359-40fd-8d59-a341bf360115" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Projects/projectCardData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/testimonial/Testimonial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/testimonial/skillsData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/banner/Banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/banner/Banner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/resume/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/resume/Resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/projectCardData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/projectCardData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688551441641</updated>
       <workItem from="1696065688697" duration="8157000" />
-      <workItem from="1696136510403" duration="7660000" />
+      <workItem from="1696136510403" duration="8792000" />
     </task>
     <servers />
   </component>

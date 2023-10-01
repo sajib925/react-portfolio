@@ -26,6 +26,7 @@ import git from "./images/skills/git.png"
 import typescript from "./images/skills/ts.png"
 import next from "./images/skills/nextjs.png"
 import github from "./images/skills/github.png"
+import webflowImg from "./images/projects/webflow-2.png"
 
 export {
     logo,
@@ -37,6 +38,7 @@ export {
     projectFive,
     projectSix,
     clientProject,
+    webflow,
     quote,
     contactImg,
     footerLogo,
@@ -50,7 +52,7 @@ export {
     tailwind,
     gatsbay,
     jquery,
-    webflow,
+    webflowImg,
     sass,
     git,
     typescript,
