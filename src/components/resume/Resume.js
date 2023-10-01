@@ -3,6 +3,8 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 // import Skills from "./Skills";
 import WordCloud from "./WordCloud";
 import { useTranslation } from "react-i18next";
+import Skills from "./Skills";
+import Testimonial from "../testimonial/Testimonial";
 
 const Resume = () => {
   const { t } = useTranslation();
@@ -31,8 +33,7 @@ const Resume = () => {
           </h1>
         </div>
       </div>
-      {/* <Skills /> */}
-      <WordCloud />
+      <Testimonial />
     </section>
   );
 };
