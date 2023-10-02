@@ -3,14 +3,6 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import {Autoplay, Pagination} from 'swiper/modules';
-import {
-    projectOne,
-    projectTwo,
-    projectThree,
-    projectFour,
-    projectFive,
-    projectSix,
-} from "../../assets/index";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import ProjectsCard from "./ProjectsCard";
 import {useTranslation} from "react-i18next";
@@ -19,7 +11,23 @@ import {projectCardData} from "./projectCardData";
 const Projects = () => {
     const {t} = useTranslation();
     const [letterClass, setLetterClass] = useState("text-animate");
+    const [isPopupOpen, setIsPopupOpen] = useState(false)
     const projects = "My Projects".split("");
+    const [selectedCategory, setSelectedCategory] = useState('All');
+
+    const handlePopupToggle = () => {
+        setIsPopupOpen((prev) => !prev)
+    }
+
+    const filteredProjects = projectCardData.filter(({category}) => {
+        if (selectedCategory === 'All') {
+            return true;
+        } else {
+            return category === selectedCategory;
+        }
+    });
+
+    const categories = ['All','Client Project', 'Webflow', 'E-Commerce', 'Blog', 'Landing', 'Admin Dashboard', 'Portfolio',];
 
     useEffect(() => {
         setLetterClass("text-animate-hover");
@@ -44,9 +52,42 @@ const Projects = () => {
                     </h1>
                 </div>
             </div>
+            <div className="flex justify-center items-center gap-x-4 pb-8 flex-wrap">
+                {categories.map((category) => (
+                    <button
+                        key={category}
+                        onClick={() => setSelectedCategory(category)}
+                        className={`${category === selectedCategory ? 'CardActive' : 'bg-white dark:bg-black'} py-4 px-6  dark:bg-opacity-25 text-gray-700 dark:text-gray-200 text-xl rounded-md dark:shadow-shadowOne shadow-shadowTwo dark:hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300 z-10 `}
+                    >
+                        {category}
+                    </button>
+                ))}
+            </div>
             <Swiper
-                slidesPerView={3}
-                spaceBetween={30}
+
+                breakpoints={{
+                    // uses minimum with
+                    320: {
+                        width: 320,
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    768: {
+                        width: 768,
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    995: {
+                        width: 995,
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    1200: {
+                        width: 1200,
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                }}
                 loop={true}
                 autoplay={{
                     delay: 2500,
@@ -56,17 +97,23 @@ const Projects = () => {
                     clickable: true,
                     autoPlay: true
                 }}
-                modules={[Autoplay]}
+                modules={[Autoplay, Pagination]}
                 className="w-full h-full sm:h-[550px]"
             >
-                {
-                    projectCardData.map(({id, link, title, subTitle, des, img, githubLink}) => (
-                        <SwiperSlide key={id}>
-                            <ProjectsCard link={link} title={t(title)} subTitle={t(subTitle)} des={t(des)} src={img}
-                                          githubLink={githubLink}/>
-                        </SwiperSlide>
-                    ))
-                }
+                {filteredProjects.map(({id, link, title, subTitle, des, img, githubLink}) => (
+                    <SwiperSlide key={id}>
+                        <ProjectsCard
+                            link={link}
+                            title={t(title)}
+                            subTitle={t(subTitle)}
+                            des={t(des)}
+                            src={img}
+                            githubLink={githubLink}
+                            handlePopupToggle={handlePopupToggle}
+                            isPopupOpen={isPopupOpen}
+                        />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </section>
     );

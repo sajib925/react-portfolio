@@ -36,12 +36,17 @@ body {
     }
 
     .skillsCard {
-        @apply py-4 px-6 bg-white dark:bg-black dark:bg-opacity-25 text-gray-700 dark:text-gray-200 text-xl flex items-center justify-center rounded-md dark:shadow-shadowOne shadow-shadowTwo dark:hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300 z-10;
+        @apply py-4 px-6 bg-white dark:bg-black dark:bg-opacity-25 text-gray-700 dark:text-gray-200 text-xl flex items-center justify-center rounded-md dark:shadow-shadowOne shadow-shadowTwo dark:hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor dark:hover:text-designColor cursor-pointer duration-300 z-10;
     }
 }
 
 .active {
     color: #00e7b5;
+}
+
+.CardActive{
+    background-color: #c4cfde;
+    color: #000000 !important;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -64,3 +69,20 @@ body {
 /* .tagcloud--item:hover {
   color: #5de4c7;
 } */
+
+.swiper-pagination-bullet{
+    width: 50px !important;
+    height: 10px;
+    border-radius: 5px !important;
+}
+.swiper-pagination-bullet-active{
+    background: #5de4c7 !important;
+}
+/*.swiper-slide {*/
+/*    width: 100% !important;*/
+/*}*/
+
+/*.swiper-wrapper{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/

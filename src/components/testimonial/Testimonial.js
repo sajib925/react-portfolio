@@ -10,7 +10,7 @@ const Testimonial = () => {
     return (
         <div className="flex items-start justify-center flex-wrap lg:flex-nowrap gap-6">
             <div className="flex items-center justify-center flex-col gap-6">
-                <h1 className="text-base text-darkText dark:text-lightText font-bold">Webflow Certificate</h1>
+                <h1 className="text-2xl text-darkText dark:text-lightText font-semibold">Webflow Certificate</h1>
                 <Swiper
                     effect={'cards'}
                     grabCursor={true}
@@ -18,10 +18,10 @@ const Testimonial = () => {
                     className="w-[300px] h-[400px] md:w-[400px] md:h-[600px]"
                 >
                     <SwiperSlide>
-                        <img src={certificate1} alt="certificate"/>
+                        <img src={certificate2} alt="certificate"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={certificate2} alt="certificate"/>
+                        <img src={certificate1} alt="certificate"/>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={certificate3} alt="certificate"/>
@@ -29,7 +29,7 @@ const Testimonial = () => {
                 </Swiper>
             </div>
             <div className="flex items-center justify-center flex-col gap-6">
-                <h1 className="text-base text-darkText dark:text-lightText font-bold">All Skills</h1>
+                <h1 className="text-2xl text-darkText dark:text-lightText font-semibold">All Skills</h1>
                 <div className="flex items-center justify-center flex-wrap gap-6">
                     {
                         skillsData.map(({id, name, img}) => (

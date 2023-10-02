@@ -27,6 +27,29 @@ import typescript from "./images/skills/ts.png"
 import next from "./images/skills/nextjs.png"
 import github from "./images/skills/github.png"
 import webflowImg from "./images/projects/webflow-2.png"
+import grover from "./images/projects/grover.png"
+import portfolio from "./images/projects/portfolio.png";
+import portfolio2 from "./images/projects/portfolio-2.png";
+import clientPortal1 from "./images/projects/client-portal-1.png";
+import clientPortal2 from "./images/projects/client-portal-2.png";
+import clientPortal3 from "./images/projects/client-portal-3.png";
+import clientPortal4 from "./images/projects/client-portal-4.png";
+import clientPortal5 from "./images/projects/client-portal-5.png";
+import clientPortal6 from "./images/projects/client-portal-6.png";
+import clientPortal7 from "./images/projects/client-portal-7.png";
+import clientPortal8 from "./images/projects/client-portal-8.png";
+import clientPortal9 from "./images/projects/client-portal-9.png";
+import clientPortal10 from "./images/projects/client-portal-10.png";
+import clientPortal11 from "./images/projects/client-portal-11.png";
+import clientPortal12 from "./images/projects/client-portal-12.png";
+import clientPortal13 from "./images/projects/client-portal-13.png";
+import clientPortal14 from "./images/projects/client-portal-14.png";
+import clientPortal15 from "./images/projects/client-portal-15.png";
+import clientPortal16 from "./images/projects/client-portal-16.png";
+import clientPortal17 from "./images/projects/client-portal-17.png";
+import clientPortal18 from "./images/projects/client-portal-18.png";
+import clientPortal19 from "./images/projects/client-portal-19.png";
+import clientPortal20 from "./images/projects/client-portal-20.png";
 
 export {
     logo,
@@ -39,6 +62,9 @@ export {
     projectSix,
     clientProject,
     webflow,
+    grover,
+    portfolio,
+    portfolio2,
     quote,
     contactImg,
     footerLogo,
@@ -57,5 +83,25 @@ export {
     git,
     typescript,
     next,
-    github
+    github,
+    clientPortal1,
+    clientPortal2,
+    clientPortal3,
+    clientPortal4,
+    clientPortal5,
+    clientPortal6,
+    clientPortal7,
+    clientPortal8,
+    clientPortal9,
+    clientPortal10,
+    clientPortal11,
+    clientPortal12,
+    clientPortal13,
+    clientPortal14,
+    clientPortal15,
+    clientPortal16,
+    clientPortal17,
+    clientPortal18,
+    clientPortal19,
+    clientPortal20,
 };
