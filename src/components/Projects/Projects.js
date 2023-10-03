@@ -98,7 +98,7 @@ const Projects = () => {
                     autoPlay: true
                 }}
                 modules={[Autoplay, Pagination]}
-                className="w-full h-full sm:h-[550px]"
+                className="w-full h-full sm:h-[600px]"
             >
                 {filteredProjects.map(({id, link, title, subTitle, des, img, githubLink}) => (
                     <SwiperSlide key={id}>
