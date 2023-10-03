@@ -37,7 +37,7 @@ export const projectCardData = [
         title: "CLIENTPORTAL",
         subTitle: "MadebyNext.js,TypescriptandChakraUi",
         des:
-            "Thisisane-commerceportfoliowebsitethatissolelyforshowcasing.Itdisplaysacollectionofproductsandservices relatedtomyworkandexpertise.",
+            "I have worked at getonnet in Norway as a frontend web developer. where I have worked on this website. This is a private website so I can't show all the features and the GitHub link.",
         img: clientProject,
         // githubLink: "https://github.com/sajib925/baby-store-minimog",
         category: "Client Project"

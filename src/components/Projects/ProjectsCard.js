@@ -46,7 +46,7 @@ const ProjectsCard = ({link, title, subTitle, des, src, githubLink, isPopupOpen,
                             </div>
                         }
 
-                        {isPopupOpen && <ProjectDetailsPopup handlePopupToggle={handlePopupToggle} isPopupOpen={isPopupOpen} />}
+                        {/*{isPopupOpen && <ProjectDetailsPopup handlePopupToggle={handlePopupToggle} isPopupOpen={isPopupOpen} />}*/}
 
                     </div>
                     <p className="text-sm mt-3 text-designColorlight dark:text-designColor font-normal">

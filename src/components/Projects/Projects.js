@@ -52,7 +52,7 @@ const Projects = () => {
                     </h1>
                 </div>
             </div>
-            <div className="flex justify-center items-center gap-x-4 pb-8 flex-wrap">
+            <div className="flex justify-center items-center gap-4 pb-8 flex-wrap">
                 {categories.map((category) => (
                     <button
                         key={category}
